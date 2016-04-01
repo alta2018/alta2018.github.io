@@ -6621,4 +6621,11 @@ td.value {
 tr {
   height: 30px;
 }
+
+.attrib-footer {
+  font-size: 0.7em;
+  text-align: right;
+  opacity: 0.65;
+  padding-right: 1em;
+}
 /*# sourceMappingURL=bootstrap.css.map */
