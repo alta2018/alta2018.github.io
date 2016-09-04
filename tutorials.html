@@ -59,14 +59,78 @@
 	</p>Tutorials will take place on Monday 5th December, immediately before the ALTA and ADCS workshops. The tutorials will also be hosted in the Caulfield campus of Monash University. Both morning and afternoon sessions will include a short coffee break.  These tutorials feature advanced methods in text processing, and will be pitched to a general audience. All workshop participants are encouraged to attend, both students and staff. </p>
 	
 	<h3>Tutorial 1: Wray Buntine</h3>
-	<p><i>Bayesian Models of Language</i> (TBC) </p>
+	<p><i>Simpler Non-parametric Bayesian Models</i> (TBC) </p>
 	<p>9am-12pm</p>
-	<p>Abstract to follow</p>
+	<p>
+Many interesting non-parametric models are now used for modelling
+discrete, structured data as we find in language, document and graph
+analysis.  These non-parametric Bayesian models are often based on a
+variety of different process models such as the Gamma process, the
+Beta process, the Pitman-Yor process, etc.  This tutorial will give an
+introduction to these models and connect to modern Bayesian
+non-parametric theory, though doing so in a less former manner.
+</p>
+<p>
+
+The basic process models can all be understood in terms of Poisson
+point processes (PPs) which can be viewed as an extension of standard
+prior distributions.  When using PPs, one can easily model infinite
+lists, where new entries are unfurled and put to use only as data
+requires it.  The Beta process in this interpretation is just an
+extension of the Beta prior for Bernoulli models that allows an
+infinite list of such Bernoullis.  Modern Bayesian non-parametric
+theory provides general solutions for reasoning with these kinds of
+models, including the hierarchical case, though the results are not
+well known in the machine learning community.  For instance, a
+hierarchical Pitman-Yor process is acting like an analogue to the
+Dirichlet distribution where instead of normalising gamma variables we
+normalise positive alpha-stable variables.
+</p>
+
+<p>
+With the basic process models introduced, we will then look at some of
+the standard variants and Bayesian reasoning with them: hierarchical
+probability models for trees and n-gram language models, infinite
+feature vector models such as the Indian buffet process, infinite
+stochastic block models and various models for matrix and tensor
+factorisation.  Some of these results are unpublished or not readily
+accessible to neophytes.  
+</p>
 
 	<h3>Tutorial 2: Simon Gog and Matthias Petri</h3>
 	<p> <i>Succinct Data Structures for Text and Information Retrieval </i> (TBC) </p>
 	<p>2pm-5pm</p>
-	<p>Abstract to follow</p>
+	<p>
+The current growth and availability of massive amounts of data
+gathered and processed by applications such as Web search engines or
+translation services has had a profound impact on the algorithmic
+requirements of many fundamental data processing tools. At the same
+time, this has provided ample motivation for a great deal of new
+theoretical and practical research on resource efficient algorithms
+and data structures.
+</p>
+
+<p>
+Over the last decades the research field of the so-called succinct and
+compressed data structures has emerged to tackle these challenges.
+These new kind of data structures provide the same operations as their
+classical counterparts within a comparable time complexity but
+requiring substantially less space. These solutions usually resort to
+a careful combination of ideas from data compression and data
+structures.
+</p>
+
+<p>
+The tutorial will introduce this field of research by presenting the
+most important succinct data structures to represent set of integers,
+set of points, trees, graphs and strings together with applications to
+Information Retrieval and Natural Language Processing problems. The
+introduction of the succinct data structures will be sustained with a
+practical session with programming handouts to solve. This will allow
+the attendees to directly experiment with implementations of these
+solutions on real datasets and understand the potential benefits to
+their own projects.
+</p>
       </div>
       
     </div> <!-- /container -->
