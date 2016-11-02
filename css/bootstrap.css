@@ -6628,4 +6628,8 @@ tr {
   opacity: 0.65;
   padding-right: 1em;
 }
+
+.new-info {
+    font-weight: bold;
+}
 /*# sourceMappingURL=bootstrap.css.map */
