@@ -6632,4 +6632,8 @@ tr {
 .new-info {
     font-weight: bold;
 }
+
+#sponsor-list img {
+    margin-top: 10px;
+}    
 /*# sourceMappingURL=bootstrap.css.map */
