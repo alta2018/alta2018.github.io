@@ -1,0 +1,29 @@
+.text { font-family: sans-serif, arial; }
+div.header, div.footer { background:#FEE; border:1px solid #F88; padding:5px }
+div.toc { background:#EEF; border:1px solid #88F; padding: 5px; width:50% }
+body, p, ul, dl, ol, li, td, th, blockquote, form {text-align: left; font-family: sans-serif; color:navy}
+body, th, td, p, ul, dl, ol, li, a, blockquote {font-size:10pt;}
+th {text-align:right; vertical-align:top}
+
+body, input {background-color:white;}
+
+h1 {font-size:18pt;}
+h2 {font-size:16pt;}
+h3 {font-size:14pt; border-bottom: solid 1px navy; margin: 0.5em;}
+h4 {font-size:12pt;}
+
+li { list-style-type: none; margin-bottom: .5em}
+a:link, a:visited { color: navy; text-decoration: underline; }
+a:hover { color: red; }
+
+.title {font-size:20pt; color:red; align:right}
+.subtitle {font-size:16pt; color:red; align:right}
+
+sup {font-size:10pt;}
+
+.section {background-color:red;color:white;font-size:18pt;text-align:center;}
+.subsection {background-color:silver;color:navy;font-size:16pt;text-align:left;}
+
+.gold {background-color:gray;color:gold;font-size:18pt;}
+.silver {background-color:gray;color:#E7E7E7;font-size:18pt;}
+.bronze {background-color:#E7E7E7;color:brown;font-size:18pt;}
