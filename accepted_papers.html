@@ -103,7 +103,7 @@
 </tr>
 <tr>
 	<th scope="row">9:15</th>
-	<td>Invited talk:</td><td>Mark Steedman</td>
+	<td>Invited talk: Mark Steedman</td><td><a href="#steedman">On Distributional Semantics</a></td>
 </tr>
 <tr>
 	<th scope="row">10:15</th>
@@ -141,7 +141,7 @@
 </tr>
 <tr>
 	<th scope="row">13:15</th>
-	<td>Invited talk:</td><td>Hercules Danialis</td>
+	<td>Invited talk: Hercules Danialis</td><td><a href="#danialis">HEALTH BANK: A Workbench for Data Science Applications in Healthcare</a></td>
 </tr>
 <tr>
 	<th scope="row">13:55</th>
@@ -211,7 +211,7 @@
 </tr>
 <tr>
 	<th scope="row">9:00</th>
-	<td>Invited talk:</td><td>Steven Bird</td>
+	<td>Invited talk: Steven Bird</td><td><a href="#bird">Getting started with an Australian language</a></td>
 </tr>
 <tr>
 	<th scope="row">9:45</th>
@@ -302,6 +302,134 @@
 	<td colspan="2">End of session</td>
 </tr>
 </tbody></table>
+
+
+<h3>Invited talk abstracts</h3>
+
+<h4 id="steedman">Mark Steedman (University of Edinburgh)</h4>
+<i>On Distributional Semantics</i>
+
+<p>
+The central problem in open domain-question answering from text is the
+problem of entailment.  Given enough text, the answer is almost
+certain to be there, but is likely to be expressed in a different form
+from the one the question suggest-either in a paraphrase, or in a
+sentence that entails or implies the answer.
+
+<p>
+We cannot afford to bridge this gap by open-ended theorem-proving
+search.  Instead we need a semantics for natural language that
+directly supports common-sense inference, such as that <i>arriving
+somewhere</i> implies subsequently <i>being there</i>, and <i>invading</i> a
+country implies <i>attacking</i> it.  We would like this semantics to be
+compatible with traditional logical operator semantics including
+quantification, negation and tense, so that <i>not being there</i> implies
+<i>not having arrived</i>, and <i>not attacking</i> implies <i>not invading</i>.
+
+<p>
+There have been many attempts to build such a semantics of content
+words by hand, from the generative semantics of the '60s to
+WordNet and other resources of the present.  The '60s saw attempts
+based on generative semantics, while more recently, they have
+engendered WordNet and other computational resources.  However, such
+systems have remained incomplete and language-specific in comparison to
+the vastness of human common-sense reasoning. One consequence has been
+renewed interest in the idea of treating the semantics as &quot;hidden&quot;, to
+be discovered through machine learning, an idea that has its origins
+in the &quot;semantic differential&quot; of Osgood, Suci, and Tannenbaum in the
+'50s.
+
+<p>
+There are two distinct modern approaches to the problem of data-driven
+or &quot;distributional&quot; semantics.  The first, which I will call
+&quot;collocational&quot;, is the direct descendant of the semantic
+differential. In its most basic form, the meaning of a word is taken
+to be a vector in a space whose dimensions are defined by the lexicon
+of the language, and whose magnitude is defined by counts of those
+lexical items within a fixed window over the string (although in
+practice the dimensionality is reduced and the relation to frequency
+less direct).  Crucially, semantic composition is defined in terms of
+linear algebraic operations, notably vector addition.
+
+<p>
+A second &quot;denotational&quot; approach defines the meaning of a word in
+terms of the entities that it is predicated over and the ensembles of
+predications over entities of the same types, obtained by
+machine-reading with wide coverage parsers.  (Names or designators in
+text are generally used as a proxy for the entities themselves.)
+Semantic composition can then be defined as an applicative system
+using logical opertors such as quantifiers and negation, as in
+traditional formal semantics.
+
+<p>
+The talk reviews recent work in both collocation- and denotation-
+based distributional semantics, and asks for each what dimensions of
+meaning are actually being represented.  It argues that the two
+approaches are largely orthogonal on these dimensions.  Collocational
+representations are good for representing ambiguity, with linear
+algebraic composition most effective at disambiguation and
+representing distributional similarity.  Denotational representations
+represent something more like a traditional compositional semantics,
+but one in which the primitive relations correspond to those of a
+hidden language of logical form representing paraphrase and
+common-sense entailment directly.
+
+<p>
+To make this point, the talk discusses recent work in which
+collocational distributional representations such as embeddings have
+been used as proxies for semantic features in models such as LSTM, to
+guide disambiguation during parsing, while a lexicalized
+denotation-based distributional semantics is used to support inference
+of entailment.  I will show that this hybrid approach can be applied
+with a number of parsing models, including transition-based and
+supertagging, to support entailment-based QA with denotation-based
+distributional representations.  I will discuss work at Edinburgh and
+elsewhere in which the semantics of paraphrases is represented by a
+single cluster identifier, and where common-sense inference (derived
+from a learned entailment graph) is built into the lexicon and
+projected by syntactic derivation, rather than delegated to a later
+stage of inference. The method can be applied cross-linguistically, in
+support of machine translation.  Ongoing work extends the method to
+extract multi-word items, light-verb constructions, and an
+aspect-based semantics for temporal/causal entailment, and to the
+creation and interrogation of Knowledge Graphs and Semantic Nets via
+natural language.
+
+<h4 id="danialis">Hercules Dalainis (Stockholm University)</h4>
+<i>HEALTH BANK: A Workbench for Data Science Applications in Healthcare</i>
+
+<p>
+Healthcare has many challenges in form of monitoring and predicting
+adverse events as healthcare associated infections or adverse drug
+events.  All this can happen while treating a patient at the hospital
+for her disease. The research question is: When and how many adverse
+events have occurred, how can one predict them? Nowadays all information
+is contained in the electronic patient records and are written both in
+structured form and in unstructured free text.  This talk will describe
+the data used for our research in HEALTH BANK - Swedish Health Record
+Research Bank containing over 2 million patient records from 2007-2014.
+Topics are detection of symptoms, diseases, body parts and drugs from
+Swedish electronic patient record text, including deciding on the
+certainty of a symptom or disease and detecting adverse (drug) events.
+Future research are detecting early symptoms of cancer and
+de-identification of electronic patient records for secondary use.
+
+
+<h4 id="bird">Steven Bird (University of Melbourne, University of California Berkeley)</h4>
+<i>Getting started with an Australian language</i>
+
+<p>
+At least a dozen Australian indigenous languages are still being learnt by children as their first language. These children have limited access to
+western-style education and often gain only limited proficiency in English. The languages are effectively unwritten, as there are no naturally
+occurring  contexts where people would need to write the language. The same situation is repeated around the world, where remote communities do
+not write their      language and do not acquire the
+national language, and government and NGO employees who work with these communities must learn to speak an unwritten language without the help of
+written resources. In this presentation I will report on early experiences working with Kunwinjku, a polysynthetic language spoken by 1,200 people
+in western     Arnhem Land, leading to several open research questions in the area of tools for adult learners of unwritten languages.
+
+
+
+
     
       <footer class="attrib-footer">
         <p>&copy; ALTA 2016 | The banner image of Monash University was adapted from <a href="https://commons.wikimedia.org/wiki/File:MonashUni-Caulfield-ServiceCentre.jpg">a photo by user Natebailey on Wikipedia</a> and is used under the <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons 3.0 Unported Licence</a></p>
